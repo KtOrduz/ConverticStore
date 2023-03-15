@@ -1,0 +1,26 @@
+
+<br>
+
+<div class="row">
+  <div class="col">
+    <app-producto-buscar 
+    (onEnter)="buscar($event)"
+    (onDebounce)="sugerencias($event)">
+
+    </app-producto-buscar>
+  </div>
+</div>
+
+<hr>
+
+<div *ngIf="hayError"
+class="alert alert-danger">
+  No se encontro el producto con el termino ingresado {{termino}}
+</div>
+
+<div *ngIf="!hayError" class="row">
+  <div class="col">
+   
+    <app-producto-card [productos]="productos"></app-producto-card>
+  </div>
+</div>

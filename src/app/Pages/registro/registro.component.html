@@ -1,0 +1,284 @@
+<!-- <section class="h-100 h-custom" style="background-color: #8fc4b7;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3">
+            <img src="../../../assets/Imagenes/ConverticStoreRegistro.png"
+              class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+              alt="Sample photo">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">REGISTRATE</h3>
+  
+              <form class="px-md-2">
+  
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1q" class="form-control" 
+                  [(ngModel)]="nombres"
+                    [ngModelOptions]="{standalone: true}"/>
+                  <label class="form-label" for="form3Example1q">Nombres</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="form3Example1q" class="form-control" 
+                    [(ngModel)]="apellidos"
+                    [ngModelOptions]="{standalone: true}"/>
+                    <label class="form-label" for="form3Example1q">Apellidos</label>
+                  </div>
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+  
+                     <div class="form-outline mb-4">
+                    <input type="text" id="form3Example1q" class="form-control" 
+                    [(ngModel)]="nDocumento"
+                    [ngModelOptions]="{standalone: true}"/>
+                    <label class="form-label" for="form3Example1q">Numero de identificacion</label>
+                  </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4">
+  
+                    <select class="select">
+                      <option disabled>Gender</option>
+                      <option value="1">CC</option>
+                      <option value="2">CE</option>
+                      <option value="3">PP</option>
+                    </select>
+  
+                  </div>
+                </div>
+  
+                <div class="form-outline mb-4">
+                    <input type="email" id="form3Example1q" class="form-control" 
+                    [(ngModel)]="correoElectronico"
+                    [ngModelOptions]="{standalone: true}"
+                    placeholder="email address" />
+                  <label class="form-label" for="form3Example1q">Correo electronico</label>
+                  </div>
+  
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-md-6">
+  
+                    <div class="form-outline mb-4">
+                    <input type="password" id="form3Example1q" class="form-control" 
+                    [(ngModel)]="contrasenna"
+                    [ngModelOptions]="{standalone: true}"/>
+                    <label class="form-label" for="form3Example1q">Contraseña</label>
+                  </div>
+  
+                  </div>
+                </div>
+  
+                <button type="submit" class="btn btn-success btn-lg mb-1" (click)="registro()">Submit</button>
+  
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="vh-100 bg-image"
+  style="background-image: url('../../../assets/Imagenes/Login\ y\ registro.jpg');">
+  <div class="container py-5 h-100">
+   
+  
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-white" text-dark  style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-4 mt-md-3 pb-4">
+
+              <h2 class="text-uppercase text-center mb-5">REGISTRATE</h2>
+
+              <form>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" 
+                  [(ngModel)]="nombres"
+                [ngModelOptions]="{standalone: true}"/>
+                  <label class="form-label" for="form3Example1cg">Nombres</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" 
+                  [(ngModel)]="apellidos"
+                [ngModelOptions]="{standalone: true}"/>
+                  <label class="form-label" for="form3Example1cg">Apellidos</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" 
+                  [(ngModel)]="nDocumento"
+                [ngModelOptions]="{standalone: true}"/>
+                  <label class="form-label" for="form3Example1cg">Numero de documento</label>
+                </div>
+
+              
+              <div class="col-md-6 mb-4">
+
+                <select class="form-select mb-10"
+                [(ngModel)]="idDocumento"
+                [ngModelOptions]="{standalone: true}"
+                placeholder="Tipo de documento">
+                  <option disabled selected>Gender</option>
+                  <option value="1">CC</option>
+                  <option value="2">CE</option>
+                  <option value="3">PP</option>
+                </select>
+                <label class="form-label" for="form3Example1cg">Tipo de documento</label>
+              </div>
+            
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" 
+                  [(ngModel)]="correoElectronico"
+                [ngModelOptions]="{standalone: true}"
+                placeholder="email address"/>
+                  <label class="form-label" for="form3Example3cg">Correo electronico </label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" 
+                  [(ngModel)]="contrasenna"
+                [ngModelOptions]="{standalone: true}"/>
+                  <label class="form-label" for="form3Example4cg">Contraseña</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" 
+                  />
+                  <label class="form-label" for="form3Example4cdg">Verificar contraseña</label>
+                </div>
+
+                <div class="form-check d-flex justify-content-center mb-5">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                  <label class="form-check-label" for="form2Example3g">
+                    I agree all statements in <a href="#!" class="text-body"><u>Terminos y condiciones</u></a>
+                  </label>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="button"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" (click)="registro()">Registrate</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Ya estas registrado? <a href="#!"
+                    class="fw-bold text-body"><u (click)="irALogin()">Ingresa aqui </u></a></p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+
+    
+
+  <!-- <section class="vh-100 bg-image"
+  style="background-image: url('../../../assets/Imagenes/Login\ y\ registro.jpg');"> -->
+  <div class="container-fluid py-4">
+   
+  
+    <div class="row d-flex justify-content-center align-items-center h-auto">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-4">
+        <div class="card bg-white" text-dark  style="border-radius: 1rem;">
+          <div class="card-body p-4 text-center">
+
+            <div class="mb-md-4 mt-md-3 pb-4">
+
+              <h2 class="text-uppercase text-center mb-5">REGISTRATE</h2>
+
+              <form>
+
+                <div class="form-outline mb-3">
+                  <input type="text" id="form3Example1cg" class="form-control form-control-sm" placeholder="Nombres"
+                  [(ngModel)]="nombres"
+                [ngModelOptions]="{standalone: true}"/>
+                  
+                </div>
+
+                <div class="form-outline mb-3">
+                  <input type="text" id="form3Example1cg" class="form-control form-control-sm" placeholder="Apellidos"
+                  [(ngModel)]="apellidos"
+                [ngModelOptions]="{standalone: true}"/>
+                   </div>
+
+                <div class="form-outline mb-3">
+                  <input type="text" id="form3Example1cg" class="form-control form-control-sm" placeholder="Numero de identificacion"
+                  [(ngModel)]="nDocumento"
+                [ngModelOptions]="{standalone: true}"/>
+                  </div>
+
+              
+              <div class="col-md-4 mb-2">
+
+                <select class="form-select mb-8 form-select-sm" placeholder="Tipo de documento"
+                [(ngModel)]="idDocumento"
+                [ngModelOptions]="{standalone: true}">
+                  <!-- <option disabled selected>Gender</option> -->
+                  <option value="1">CC</option>
+                  <option value="2">CE</option>
+                  <option value="3">PP</option>
+                </select>
+                  </div>
+            
+                <div class="form-outline mb-3">
+                  <input onkeyup="check()" id="email" type="text" autocomplete="off" size="30" required id="email" class="form-control form-control-sm" 
+                  [(ngModel)]="correoElectronico"
+                [ngModelOptions]="{standalone: true}"
+                placeholder="Correo electronico"/>
+                   </div>
+                   <div class="texto-error">
+                    Introduzca un correo valido
+                   </div>
+
+                <div class="form-outline mb-3">
+                  <input type="password" id="form3Example4cg" class="form-control form-control-sm" placeholder="Contraseña" 
+                  [(ngModel)]="contrasenna"
+                [ngModelOptions]="{standalone: true}"/>
+                 </div>
+                 
+                <div class="form-outline mb-3">
+                  <input type="password" id="form3Example4cdg" class="form-control form-control-sm" placeholder="Confirmar contraseña"
+                  [(ngModel)]="confirmarContrasenna"
+                [ngModelOptions]="{standalone: true}"/>
+                  </div>
+
+                <!-- <div class="form-check d-flex justify-content-center mb-5">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                  <label class="form-check-label" for="form2Example3g">
+                    I agree all statements in <a href="#!" class="text-body"><u>Terminos y condiciones</u></a>
+                  </label>
+                </div> -->
+
+                <div class="d-flex justify-content-center">
+                  <button type="button"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" (click)="registro()">Registrate</button>
+                </div>
+
+                <p class="text-center text-muted mt-4 mb-0">Ya estas registrado? <a href="login"
+                    class="fw-bold text-body"><u >Ingresa aqui </u></a></p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+<!-- </section> -->
+

@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary"
+  style="background-color: rgb(255, 255, 255); background-size: cover;">
+  <div class="container-fluid">
+    <img src="../../../assets/Imagenes/ConverticStore.png" alt="ConverticStore" width="180" height="90">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li style="font-size: 16px;" routerLink="" class="nav-item nav-link" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">
+          <b>Hombre</b>
+        </li>
+        <li routerLink="mujer" class=" nav-item nav-link" routerLinkActive="active">
+          <b>Mujer</b>
+        </li>
+        <li routerLink="productos/:id" class=" nav-item nav-link" routerLinkActive="active"> <b>Producto</b></li>
+      </ul>
+    </div>
+
+
+    <div>
+      
+        <a href=""><img src="../../../../assets/Imagenes/carrito-de-compras.png" width="40" height="40" alt="" ng></a>
+    
+        <a ><img *ngIf="!mostrarLogin" (click)="irALogin()"  src="../../../../assets/Imagenes/perfil.png" width="40" height="40" alt="" ></a>
+     
+        <a ><img *ngIf="!mostrarLogout" (click)="irALogout()" src="../../../../assets/Imagenes/power-button.png" width="40" height="40" alt="" ></a>
+      
+    </div>
+  </div>
+
+
+</nav>
