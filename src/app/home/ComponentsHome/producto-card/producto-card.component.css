@@ -5,3 +5,7 @@
     height: 100%;
     gap: 30px;
 }
+
+p.reduce-spacing {
+    margin: 0.5em 0;
+  }

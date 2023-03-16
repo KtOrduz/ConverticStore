@@ -1,49 +1,17 @@
-<!-- <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Producto</th>
-        <th>Seccion</th>
-        <th>Descripcion</th>
-        <th>Talla</th>
-        <th>Color</th>
-        <th>Marca</th>
-        <th>Valor unitario</th>
-        <th>Cantidad</th>
-        <th>Imagen</th>
 
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let producto of productos">
-        <th>{{producto.producto}}</th>
-        <th>{{producto.seccion.seccion}}</th>
-        <th>{{producto.descripcion}}</th>
-        <th>{{producto.talla.talla}}</th>
-        <th>{{producto.color.color}}</th>
-        <th>{{producto.marca.marca}}</th>
-        <th>{{producto.valorUnitario}}</th>
-        <th>{{producto.cantidad}}</th>
-        <th>{{producto.imagen}}
-          <figure>
-            <img src="../../../../assets/Imagenes/" alt="{{producto.imagen}}">
-          </figure>
-        </th>
-      </tr>
-      
-    </tbody>
-  </table> -->
 
   <div class="cards-container" style="display: flex; flex-direction: row;" >
     <div class="card" style="width: 15rem;" *ngFor="let producto of productos">
-      <img src="../../../../assets/Imagenes/{{producto.imagen}}" class="card-img-top" alt="...">
+      <img src="../../../../assets/Imagenes/{{producto.imagen}}" class="card-img-top
+      " alt="...">
       <div class="card-body">
-        <h5 class="card-title">{{producto.producto}}</h5>
-        <p class="card-text">{{producto.descripcion}}</p>
-        <p class="card-text">Marca: {{producto.marca.marca}}</p>
-        <p class="card-text">Tallas: {{producto.talla.talla}}</p>
-        <p class="card-text">Colores: {{producto.color.color}}</p>
-        <p class="card-text">Stock: {{producto.cantidad}}</p>
-        <p class="card-text">Precio: {{producto.valorUnitario}}</p>
+        <h6 class="card-title" style="color: darkblue;">{{producto.producto}}</h6>
+        <p class="card-text" class="reduce-spacing" style="font-size: small; ">{{producto.descripcion}}</p>
+        <p class="card-text" class="reduce-spacing" style="font-size: small;">Marca: {{producto.marca.marca}}</p>
+        <p class="card-text" class="reduce-spacing" style="font-size: small;">Tallas: {{producto.talla.talla}}</p>
+        <p class="card-text" class="reduce-spacing" style="font-size: small;">Colores: {{producto.color.color}}</p>
+        <p class="card-text" class="reduce-spacing" style="font-size: small;">Stock: {{producto.cantidad}}</p>
+        <p class="card-text" class="reduce-spacing" style="font-size: small;">Precio: {{producto.valorUnitario}}</p>
         <a href="#" class="btn btn-primary">Comprar</a>
       </div>
     </div>
